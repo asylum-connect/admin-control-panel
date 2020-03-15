@@ -1,10 +1,10 @@
 import React from 'react';
 import {Box} from '@chakra-ui/core';
 
-import Loading from '../components/Loading';
-import Table from '../components/Table';
-import {Container, Title} from '../components/styles';
-import {useAPIGet} from '../utils/hooks';
+import Loading from '../../components/Loading';
+import Table from '../../components/Table';
+import {Container, Title} from '../../components/styles';
+import {useAPIGet} from '../../utils/hooks';
 
 const headers = [
   {key: 'name', label: 'Name'},

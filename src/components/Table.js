@@ -5,8 +5,7 @@
  */
 import PropTypes from 'prop-types';
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Heading, Text} from '@chakra-ui/core';
+import {Heading, Link, Text} from '@chakra-ui/core';
 import {css} from '@emotion/core';
 import styled from '@emotion/styled';
 
@@ -85,7 +84,7 @@ const Table = props => {
                 return (
                   <td key={keyIndex}>
                     {getRowLink ? (
-                      <Link to={getRowLink(row)}>{children}</Link>
+                      <Link href={getRowLink(row)}>{children}</Link>
                     ) : (
                       children
                     )}

@@ -3,11 +3,10 @@
   "private": true,
   "scripts": {
     "local": "REACT_APP_APP_ENV=local npm start",
-    "dev": "npm run start",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "serve": "node src/server"
+    "dev": "next dev",
+    "start": "next start",
+    "build": "next build",
+    "test": "echo 'test'"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.6.1",
@@ -18,36 +17,15 @@
     "express": "^4.17.1",
     "formik": "^2.1.4",
     "lodash": "^4.17.15",
+    "next": "^9.1.7",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.1.2",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "prettier": "^1.18.2"
-  },
-  "eslintConfig": {
-    "extends": "react-app",
-    "rules": {
-      "react/prop-types": "warn"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "husky": {
     "hooks": {

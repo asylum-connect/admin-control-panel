@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import {Link} from 'react-router-dom';
 import {Box, Link as ChakraLink, Text} from '@chakra-ui/core';
 
 import {ContextApp} from './ContextApp';
@@ -48,14 +47,14 @@ const Header = () => {
         {hasUser ? (
           <>
             <Box display="inline-block" width="calc(100% - 172px)">
-              <ChakraLink as={Link} fontSize="xl" to="/" mr={3}>
+              <ChakraLink fontSize="xl" href="/" mr={3}>
                 Organizations
               </ChakraLink>
-              <ChakraLink as={Link} fontSize="xl" to="/services" mr={3}>
+              <ChakraLink fontSize="xl" href="/services" mr={3}>
                 Services
               </ChakraLink>
               {user?.isAdmin && (
-                <ChakraLink as={Link} fontSize="xl" to="/admin">
+                <ChakraLink fontSize="xl" href="/admin">
                   Admin
                 </ChakraLink>
               )}

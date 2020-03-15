@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
 import {Box, Button} from '@chakra-ui/core';
 
-import {ContextFormModal} from '../components/ContextFormModal';
-import Loading from '../components/Loading';
-import Table from '../components/Table';
-import {Container, Title} from '../components/styles';
-import {useAPIGet} from '../utils/hooks';
+import {ContextFormModal} from '../../components/ContextFormModal';
+import Loading from '../../components/Loading';
+import Table from '../../components/Table';
+import {Container, Title} from '../../components/styles';
+import {useAPIGet} from '../../utils/hooks';
 
 const headers = [
   {key: 'name', label: 'Name'},

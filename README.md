@@ -1,4 +1,4 @@
-# Asylum Connect Control Panel
+# AsylumConnect Control Panel
 
 [![Build Status](https://travis-ci.org/asylum-connect/admin-control-panel.svg?branch=master)](https://travis-ci.org/asylum-connect/admin-control-panel)
 
@@ -9,7 +9,7 @@ $ cd to admin-control-panel
 
 $ npm i
 
-$ npm start
+$ npm run dev
 ```
 
 ## Codebase
@@ -22,15 +22,13 @@ admin-control-panel/
 ├── src             # All of the source code for the app
 ├── src/components  # React components used throughout the app
 ├── src/pages       # App's pages
-├── src/utils       # Shared utilities
-└── src/server.js   # Express server used to serve the app in production
+├── src/pages/api   # App's api routes
+└── src/utils       # Shared utilities
 ```
 
 Technologies
 
-- [create-react-app](https://create-react-app.dev/)
+- [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
-- [React-Router](https://reacttraining.com/react-router/)
 - [Chakra-UI](https://chakra-ui.com/)
 - [Formik](https://jaredpalmer.com/formik/)
-- [Express](https://expressjs.com/)

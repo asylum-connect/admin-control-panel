@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 import React, {useContext} from 'react';
-import {Link} from 'react-router-dom';
-import {Box, Button, Text} from '@chakra-ui/core';
+import {Box, Button, Link, Text} from '@chakra-ui/core';
 
-import {ContextFormModal} from '../components/ContextFormModal';
-import Loading from '../components/Loading';
-import Table from '../components/Table';
-import {Container, Title} from '../components/styles';
-import {useAPIGet} from '../utils/hooks';
+import {ContextFormModal} from '../../components/ContextFormModal';
+import Loading from '../../components/Loading';
+import Table from '../../components/Table';
+import {Container, Title} from '../../components/styles';
+import {useAPIGet} from '../../utils/hooks';
 
 const duplicateForm = {
   name: {
@@ -109,7 +108,7 @@ const Service = props => {
           <Text>{description}</Text>
           <Container>
             {/* TODO: link to actual service's organization */}
-            <Link to="/organizations">
+            <Link href="/organizations">
               <Text>Organization Name</Text>
             </Link>
             {JSON.stringify(data)}
